@@ -5,7 +5,7 @@
 		*{margin:0 0 0 0px;
 padding:0;
 }
-		body{width:1024px;margin:auto;background:url("/images/background.jpg");font-family:unitedsanssemicond;}
+		body{width:1024px;margin:auto;background:url("/images/background.jpg");font-family:unitedsanssemicond;}        
 		.mainHeader{background:url("/images/1.jpg");height:130px;width:1024px;}
 		#banner1{font-size:18px;color: black;position:relative;left:720px;letter-spacing:4px;text-transform:uppercase;padding:25px;}
 		#nav{color:white;position:relative;top:130px;}

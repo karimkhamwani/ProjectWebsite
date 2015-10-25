@@ -1,58 +1,20 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
-<head>
-    <title>flamingo.com</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Homepage.css">
+<!DOCTYPE html>
 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Homepage.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
-<style type="text/css">
-    .slider {
-        margin-left: 0px;
-        margin-top: 50px;
-        overflow: hidden;
-    }
-
-        .slider img {
-            width: 1024px;
-            height: 402px;
-            display: none;
-        }
-</style>
-<script type="text/javascript"
-        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-
-
-ui.min.js"></script>
-<script type="text/javascript">
-    function Slider() {
-        $(".slider #1").show("fade", 500);
-        $(".slider #1").delay(5500).hide("slide", { direction: 'left' }, 500);
-        var sc = $(".slider img").size();
-        var count = 2;
-        setInterval(function () {
-            $(".slider #" + count).show("slide", { direction: 'right' }, 500);
-            $(".slider #" + count).delay(5500).hide("slide", { direction: 'left' }, 500);
-
-            if (count == sc) {
-                count = 1;
-
-            } else count = count + 1;
-
-
-        }, 6500);
-
-
-
-    }
-</script>
-
-
-
 <body onload="Slider();">
-    <header class="mainHeader">
+    
+    <div>
+        
+
+        <header class="mainHeader">
 
 
 
@@ -75,7 +37,7 @@ ui.min.js"></script>
                         <ul><a>Fries</a></ul>
                     </ul></li>
 
-                <li><a>DEALS</a>
+                <li><a href="/Deals.aspx">DEALS</a>
                 <ul class="menu2">
                     <ul><a>Deal 1</a></ul>
                     <ul><a>Deal 2</a></ul>
@@ -116,36 +78,24 @@ ui.min.js"></script>
             </ul>
 
              <div class="flamingoBtn">
-                <div style="padding-top:16px;">Order Now!</div>
+                <div style="padding-top:16px;"><a style="color:white;" href="/HomePage.aspx">Home</a></div>
             </div>
 
         </div>
 
     </header>
 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
 
-    <section class="container">
-
-        <div class="">
-            <div class="slider">
-                
-                <img id="1" src="./images/deal4.jpg" width="800" height="400" />
-                <img id="2" src="./images/deal5.jpg" width="800" height="400" />
-                <img id="3" src="./images/deal6.jpg" width="800" height="400" />
-
-            </div>
-
-        </div>
-    </section>
-
-    
-    <footer class="footer">
+        <footer class="footer">
         <div class="navFooter">
             <div class="navColumn" style="width:140px">
                 <h5>Order</h5>
                 <ul>
                     <li>
-                        <a href="">Deals</a>
+                        <a href="/Deals.aspx">Deals</a>
                     </li>
                     <li>
                         <a href="">Menu</a>
@@ -208,6 +158,7 @@ ui.min.js"></script>
 
         </div>
     </footer>
-
+    </div>
+    
 </body>
 </html>

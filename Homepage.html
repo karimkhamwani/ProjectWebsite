@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>flamingo.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+
+</head>
+<style type="text/css">
+    .slider {
+        margin-left: 0px;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+        .slider img {
+            width: 1024px;
+            height: 402px;
+            display: none;
+        }
+</style>
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-
+
+ui.min.js"></script>
+<script type="text/javascript">
+    function Slider() {
+        $(".slider #1").show("fade", 500);
+        $(".slider #1").delay(5500).hide("slide", { direction: 'left' }, 500);
+        var sc = $(".slider img").size();
+        var count = 2;
+        setInterval(function () {
+            $(".slider #" + count).show("slide", { direction: 'right' }, 500);
+            $(".slider #" + count).delay(5500).hide("slide", { direction: 'left' }, 500);
+
+            if (count == sc) {
+                count = 1;
+
+            } else count = count + 1;
+
+
+        }, 6500);
+
+
+
+    }
+</script>
+
+
+
+<body onload="Slider();">
+    <header class="mainHeader">
+
+
+
+        <div id="nav">
+            <ul class="menu">
+                <li><a>MENU</a>
+                    <ul class="menu2">
+                        <ul><a>Chata-Pata</a></ul>
+                        <ul><a>Milk Shakes</a></ul>
+                        <ul><a>Juices</a></ul>
+                        <ul><a>Shawarma</a></ul>
+                        <ul><a>Rolls</a></ul>
+                        <ul><a>Bar B.Q</a></ul>
+                        <ul><a>Broast</a></ul>
+                        <ul><a>Soup</a></ul>
+                        <ul><a>Rice</a></ul>
+                        <ul><a>Noodles</a></ul>
+                        <ul><a>Handi</a></ul>
+                        <ul><a>Burgers</a></ul>
+                        <ul><a>Fries</a></ul>
+                    </ul></li>
+
+                <li><a>DEALS</a>
+                <ul class="menu2">
+                    <ul><a>Deal 1</a></ul>
+                    <ul><a>Deal 2</a></ul>
+                    <ul><a>Deal 3</a></ul>
+                    <ul><a>Deal 4</a></ul>
+                    <ul><a>Deal 5</a></ul>
+                    <ul><a>Deal 6</a></ul>
+                    <ul><a>Deal 7</a></ul>
+                    <ul><a>Deal 8</a></ul>
+                    <ul><a>Deal 9</a></ul>
+                    <ul><a>Deal 10</a></ul>
+                    <ul><a>Deal 11</a></ul>
+                    <ul><a>Deal 12</a></ul>
+                    <ul><a>Deal 13</a></ul>
+                    <ul><a>Deal 14</a></ul>
+                </ul>
+                    </li>
+            </ul>
+            <ul class="menu" style="float:right;">
+               
+                <li><a>ABOUT</a>
+                <ul class="menu2">
+                <ul><a>Our Story</a></ul>
+                    <ul><a>Gallery</a></ul>
+                    <ul><a style="color:white;" href="https://www.google.com/maps/dir/''/flamingo+clifton/@24.8271883,66.9958503,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3eb33dbf78bff189:0x5106c7420441e3ef!2m2!1d67.03087!2d24.8271145">Site map</a></ul>    
+
+                </ul>
+                </li>
+                
+                <li>
+
+                <a>CONTACT</a>
+            <ul class="menu2">
+                <ul><a>ok</a></ul>
+            </ul>    
+                </li>
+            
+            </ul>
+
+             <div class="flamingoBtn">
+                <div style="padding-top:16px;">Order Now!</div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section class="container">
+
+        <div class="">
+            <div class="slider">
+                
+                <img id="1" src="./images/deal4.jpg" width="800" height="400" />
+                <img id="2" src="./images/deal5.jpg" width="800" height="400" />
+                <img id="3" src="./images/deal6.jpg" width="800" height="400" />
+
+            </div>
+
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="navFooter">
+            <div class="navColumn" style="width:140px">
+                <h5>Order</h5>
+                <ul>
+                    <li>
+                        <a href="">Deals</a>
+                    </li>
+                    <li>
+                        <a href="">Menu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navColumn">
+                <h5>About us</h5>
+                <ul>
+                    <li>
+                        <a href="">Our Story</a>
+                    </li>
+                    <li>
+                        <a href="">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="">Site Map</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navColumn">
+                <h5>customer service</h5>
+                <ul>
+                    <li>
+                        <a href="/Feedback.aspx">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navColumn">
+                <h5>my account</h5>
+                <ul>
+                    <li>
+                        <a href="">Create and account</a>
+                    </li>
+                    <li>
+                        <a href="">sign in</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navColumn" style="width:270px; padding:0;">
+                <h5>connect with flamingo</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/flamingojuiceandchat?fref=ts">facebook</a>
+                    </li>
+                    <li>
+                        <a href="">twitter</a>
+                    </li>
+                    <li>
+                        <a href="">Mobile Site</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

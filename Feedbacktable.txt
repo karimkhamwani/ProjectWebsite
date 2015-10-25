@@ -1,0 +1,13 @@
+create table Feedback(
+
+Dateandtime varchar(50) null,
+Name varchar(50) null, 
+Email varchar(50) null,
+Gender varchar(20) null,
+Phonenumber bigint null,
+Qualityoffood varchar(20) null,
+Cleanliness varchar(20) null,
+Overallquality varchar(20) null,
+Comments varchar(550) null,
+
+);

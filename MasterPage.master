@@ -5,13 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="Homepage.css" rel="stylesheet" type="text/css" />
+    <link href="MasterPage.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body onload="Slider();">
     
-    <div>
+    
         
 
         <header class="mainHeader">
@@ -20,7 +20,7 @@
 
         <div id="nav">
             <ul class="menu">
-                <li><a>MENU</a>
+                <li><a style="color:white;" href="/FoodMenu.aspx">MENU</a>
                     <ul class="menu2">
                         <ul><a>Chata-Pata</a></ul>
                         <ul><a>Milk Shakes</a></ul>
@@ -37,7 +37,7 @@
                         <ul><a>Fries</a></ul>
                     </ul></li>
 
-                <li><a href="/Deals.aspx">DEALS</a>
+                <li><a style="color:white;" href="/Deals.aspx">DEALS</a>
                 <ul class="menu2">
                     <ul><a>Deal 1</a></ul>
                     <ul><a>Deal 2</a></ul>
@@ -98,7 +98,7 @@
                         <a href="/Deals.aspx">Deals</a>
                     </li>
                     <li>
-                        <a href="">Menu</a>
+                        <a href="/FoodMenu.aspx">Menu</a>
                     </li>
                 </ul>
             </div>
@@ -158,7 +158,7 @@
 
         </div>
     </footer>
-    </div>
+    
     
 </body>
 </html>

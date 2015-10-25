@@ -1,6 +1,8 @@
 ﻿<%@ Page MasterPageFile="~/MasterPage.master" Language="C#" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
 
 <asp:Content ContentPlaceHolderid="head" runat="server">
+    <title>Home Page</title>  
+    <link href="HomePage.css" rel="stylesheet" />
 <style type="text/css">
     .slider {
         margin-left: 0px;
@@ -46,7 +48,7 @@ ui.min.js"></script>
 <asp:Content ContentPlaceHolderId="ContentPlaceHolder1" runat="server">
   <section class="container">
 
-        <div class="">
+        
             <div class="slider">
                 
                 <img id="1" src="./images/deal4.jpg" width="800" height="400" />
@@ -55,7 +57,7 @@ ui.min.js"></script>
 
             </div>
 
-        </div>
+        
     </section>
   
 </asp:Content>
